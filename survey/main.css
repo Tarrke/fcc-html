@@ -1,0 +1,65 @@
+html,body{
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    text-align:center;
+    min-width:260px;
+
+    --empire-red: rgb(139, 32, 25);
+    color:var(--empire-red);
+}
+
+#main{
+    margin:30px auto;
+    padding:15px;
+    border:0px solid;
+    border-radius:5px;
+    background: #eee;
+}
+
+#title {
+    border: 3px solid var(--empire-red);
+    padding-bottom: 1em;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+div.subtitle {
+    margin-top: -0.5em;
+    display: block;
+    font-size: 1.5em;
+}
+
+#main_form {
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 660px;
+    border: 3px solid var(--empire-red);
+    font-size: 1em;
+}
+
+#main_form p {
+    font-size: 1.3em;
+}
+
+#main_form .rowForm {
+    border: 2px solid green;
+    margin: 1em;
+}
+
+#main_form .labels {
+    display: inline-block;
+    text-align: right;
+}
+
+#main_form .fields {
+    display: inline-block;
+    text-align: left;
+}
