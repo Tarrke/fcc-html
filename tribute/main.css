@@ -2,43 +2,98 @@ html,body{
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     text-align:center;
     min-width:260px;
-    color:#333;
-  }
-  #main{
+    color:rgb(139, 32, 25);
+}
+
+#main{
     margin:30px auto;
     padding:15px;
     border:0px solid;
     border-radius:5px;
-    background:#eee;
-  }
-  img{
+    background: #111111;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+div.subtitle {
+    margin-top: -0.5em;
+    display: block;
+    font-size: 1.5em;
+}
+
+img{
     max-width: 100%;
     display: block;
     height: auto;
     margin: auto;
-  }
-  #img-div{
+}
+
+#img-div{
     margin:-5px;
     margin-top:20px;
     width:100%;
-    border:5px solid white;
-    background:white;
-  }
-  #img-caption{
+    border:5px solid rgb(139, 32, 25);
+    background:#111111;
+}
+
+#img-caption{
     margin:15px;
-  }
-  #headline{
-    margin-top:50px;
-    text-align:left;
-  }
-  ul{
+}
+
+#timeline {
+    display: block;
+    max-width: 600px;
+    position: relative;
+    border: 3px solid rgb(139, 32, 25);
+    margin: auto;
+    margin-top: 3em;
+}
+
+#headline{
+    margin-top: 25px;
+    text-align: left;
+}
+
+ul.timeline {
     max-width:550px;
     margin:0 auto;
     text-align:left;
-  }
-  li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li{
     margin: 10px;
-  }
-  blockquote{
+}
+
+blockquote{
+    display: block;
+    max-width: 600px;
     font-style: italic;
-  }
+    margin: auto;
+    background-color: #222222;
+    border: 3px solid rgb(139, 32, 25);
+    margin-top: 3em;
+}
+
+blockquote p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+blockquote div {
+    text-align: right;
+    padding-right: 3em;
+    margin-bottom: 1em;
+}
