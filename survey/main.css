@@ -15,7 +15,7 @@ html,body{
     background: #eee;
 }
 
-#title {
+#title_holder {
     border: 3px solid var(--empire-red);
     padding-bottom: 1em;
 }
@@ -45,21 +45,77 @@ div.subtitle {
     font-size: 1em;
 }
 
+#main_form hr {
+    width: 80%;
+    height: 8px;
+    background-image: radial-gradient(ellipse farthest-corner, orange, var(--empire-red));
+    color: var(--empire-red);
+    border: 0 none;
+    margin: 5px auto;
+}
+
 #main_form p {
     font-size: 1.3em;
 }
 
 #main_form .rowForm {
-    border: 2px solid green;
-    margin: 1em;
+    /*border: 2px solid green;*/
+    margin: 0em;
 }
 
 #main_form .labels {
     display: inline-block;
     text-align: right;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 10px;
+    padding: 6px;
 }
 
 #main_form .fields {
     display: inline-block;
     text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field, .dropdown {
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid var(--empire-red);
+    border-radius: 2px;
+}
+
+.input-field {
+    height: 20px;
+}
+
+.radio-list, .preferences {
+    list-style: none;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -40px;
+}
+
+.userRatings {
+  float: left;
+  margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#submit {
+    /*background-color: #59ace0;*/
+    border-radius: 4px;
+    color: var(--empire-red);
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 1px solid var(--empire-red);
 }

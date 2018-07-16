@@ -8,21 +8,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="icon" href="./images/empire-icon.png"
     <script src="main.js"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 
 </head>
 <body>
     <header></header>
     <div id="main">
-        <div id="title">
-            <h1>Empire's Recruit Survey</h1>
-            <div class="subtitle">Welcome to the Empire's recruitement center</div>
+        <div id="title_holder">
+            <h1 id="title">Empire's Recruitment Survey</h1>
+            <div class="subtitle">Welcome to the <b>E</b>mpire's <b>R</b>ecruitment <b>C</b>enter</div>
         </div>
         <div id="main_form">
             <p id="description">
-                If you wish to join the empire please fill up this form.
+                If you wish to join the empire please fill up this form
             </p>
-            <form id="survey-form">
+            <form id="survey-form" action="./index.html" method="GET">
                 <div class="rowForm">
                     <div class="labels">
                         <label id="name-label" for="name">* Name: </label>
@@ -32,13 +32,85 @@
                     </div>
                 </div>
                 <div class="rowForm">
-                        <div class="labels">
-                            <label id="email-label" for="email">* Email: </label>
-                        </div>
-                        <div class="fields">
-                            <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
-                        </div>
+                    <div class="labels">
+                        <label id="email-label" for="email">* Email: </label>
                     </div>
+                    <div class="fields">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="rowForm">
+                    <div class="labels">
+                        <label id="number-label" for="age">* Age: </label>
+                    </div>
+                    <div class="fields">
+                        <input type="number" name="age" id="number" class="input-field" placeholder="Enter your age" min="21" max="30" required>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="rowForm">
+                    <div class="labels">
+                        <label id="corp-label" for="corp">What corp do you whish to join? </label>
+                    </div>
+                    <div class="fields">
+                        <select id="dropdown" name="corp" class="dropdown">
+                            <option disabled value="">Select a Corp</option>
+                            <option value="navy">Imperial Navy</option>
+                            <option value="research">Imperial Department of Military Research</option>
+                            <option value="diplomatics">Imperial Diplomatic Corps</option>
+                            <option value="engineer">Imperial Engineering Corps</option>
+                            <option value="survey">Imperial Survey Corps</option>
+                            <option value="exploration">Imperial Exploration Corps</option>
+                            <option value="surgical">Imperial Surgical Corps</option>
+                            <option value="army">Imperial Army</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowForm">
+                    <div class="labels">
+                        <label for="radio-buttons" id="radio-label">* What is yor main quality</label>
+                    </div>
+                    <div class="fields">
+                        <ul class="radio-list">
+                            <li class="radio"><label>Strenght<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                            <li class="radio"><label>Inteligence<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                            <li class="radio"><label>Charisma<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                            <li class="radio"><label>Spaceship flying<input name="radio-buttons" value="4"  type="radio" class="userRatings" ></label></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rowForm">
+                    <div class="labels">
+                        <label>Which traits do you fancy?</label>
+                    </div>
+                    <div class="fields">
+                        <ul class="preferences">
+                            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings2">Faith</label></li>
+                            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings2">Patriotism</label></li>
+                            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings2">Betrayal</label></li>
+                            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings2">Personal Advancement</label></li>
+                            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings2">Servhood</label></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rowForm">
+                    <div class="labels">
+                        <label for="comments">Why should we recruit you?</label>
+                    </div>
+                    <div class="fields">
+                        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="rowForm">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
             </form>
         </div>
     </div>
