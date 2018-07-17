@@ -1,0 +1,87 @@
+html,body{
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    text-align:center;
+    min-width:260px;
+
+    --empire-red: rgb(139, 32, 25);
+    color:var(--empire-red);
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    width: 10%;
+    border: solid 1px green;
+    min-width: 100px;
+    /*display: inline-block;*/
+}
+
+#nav-bar {
+    width: 80%;
+    border: solid 1px green;
+    /*display: inline-block;*/
+}
+
+#header-img {
+    width: 100%;
+}
+
+.nav-link {
+    color: var(--empire-red);
+    text-decoration: none;
+}
+
+#product-form {
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 660px;
+    border: 3px solid var(--empire-red);
+    font-size: 1em;
+}
+
+#product-form .rowForm {
+    border: 2px solid green;
+    margin: 0em;
+}
+
+#product-form .labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 10px;
+    padding: 6px;
+}
+
+#product-form .fields {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field {
+    /*height: 20px;*/
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid var(--empire-red);
+    border-radius: 2px;
+}
+
+#submit {
+    /*background-color: #59ace0;*/
+    border-radius: 4px;
+    color: var(--empire-red);
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 1px solid var(--empire-red);
+    cursor: pointer;
+}
