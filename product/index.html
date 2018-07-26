@@ -11,7 +11,7 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="header">
         <div id="logo">
             <img id="header-img" src="./images/imperial-logo.png" alt="Imperial Logo" />
         </div>
@@ -23,36 +23,89 @@
             </ul>
         </nav>
     </header>
-    <div id="main-title">
-        <h1>Tie Advanced</h1>
-        <h2>The best of the Empire technologie.</h2>
-    </div>
-    <div id="video-container">
-        <iframe id="video" height="315" src="https://www.youtube.com/embed/flemAAZyZgY" frameborder="0" allowfullscreen></iframe>
-    </div>
 
-    <div id="pricing">
-            Pricing
-    </div>
+    <div id="main">
+        <div id="main-title">
+            <h1>Tie Advanced</h1>
+            <h2>The best of the Empire technologie.</h2>
+        </div>
+        <div id="video-container">
+            <iframe id="video" height="315" src="https://www.youtube.com/embed/flemAAZyZgY" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-    <div id="technical">
-        Technical Caracs
-    </div>
+        <div id="pricing">
+                <h2>Pricing</h2>
+                <table class='pricingTable'>
+                    <tr>
+                        <th>1 unit</th>
+                        <th>10 units</th>
+                        <th>10 000 units</th>
+                    </tr>
+                </table>
+        </div>
 
-    <div id="product-form">
-        <form id="form" method="GET" action="https://www.freecodecamp.org/email-submit">
-            <div class="rowForm">
-                <div class="labels">
-                    <label id="email-label" for="email">* Email: </label>
+        <div id="technical">
+            <h2>Technical Caracs</h2>
+            <table class='productTable'>
+                <tr>
+                    <th colspan="2">Production information</th>
+                </tr>
+                <tr>
+                    <td>Manufacturer</td>
+                    <td>Sienar Fleet Systems</td>
+                </tr>
+                <tr>
+                    <td>Designer</td>
+                    <td><ul type="square"><li>Darth Vader</li><li>Raith Sienar</li></ul></th>
+                </tr>
+                <tr><td>Line</td><td>TIE Series</td></tr>
+                <tr><td>Model</td><td>Twin Ion Engine Advanced x1</td></tr>
+                <tr><td>Class</td><td>Starfighter</td></tr>
+                <tr><th colspan="2">Technical specifications</th></tr>
+                <tr><td>Lenght</td><td>9.2 meters</td></tr>
+                <tr><td>Maximum acceleration</td><td>4 150 G</td></tr>
+                <tr><td>MGLT</td><td>105 MGLT</td></tr>
+                <tr><td>Maximum atmospheric speed</td><td>1 200 km/h</td></tr>
+                <tr><td>Engine unit(s)</td><td>SFS P-s5.6 twin ion engines (2)</td></tr>
+                <tr><td>Hyperdrive rating</td><td>Class 4.0</td></tr>
+                <tr><td>Power plant</td><td>SFS I-s3a solar ionization reactor</td></tr>
+                <tr><td>Shielding</td><td>Equipped</td></tr>
+                <tr><td>Hull</td><td>Reinforced durasteel alloy</td></tr>
+                <tr><td>Navigation system</td><td>Equipped, 10 jump limit</td></tr>
+                <tr>
+                    <td>Armament</td>
+                    <td>
+                        <ul type="square">
+                            <li>L-s9.3 laser cannons (2)</li>
+                            <li>Cluster missile launch equipment</li>
+                                <ul>
+                                    <li>20 cluster missiles</li>
+                                </ul>
+                        </ul>
+                    </td>
+                </tr>
+                <tr><td>Crew</td><td>Pilot (1)</td></tr>
+                <tr><td>Passengers</td><td>None</td></tr>
+                <tr><td>Cargo capacity</td><td>150 kilograms</td></tr>
+                <tr><td>Consumables</td><td>5 days</td></tr>
+            </table>
+        </div>
+
+        <div id="product-form">
+            <form id="form" method="GET" action="https://www.freecodecamp.org/email-submit">
+                <div class="rowForm">
+                    <div class="labels">
+                        <label id="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="fields">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                    </div>
                 </div>
-                <div class="fields">
-                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                <div class="rowForm">
+                    <input type="submit" id="submit" value="Submit"></input>
                 </div>
-            </div>
-            <div class="rowForm">
-                <input type="submit" id="submit" value="Submit"></input>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 </html>

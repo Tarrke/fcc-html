@@ -7,10 +7,22 @@ html,body{
     color:var(--empire-red);
 }
 
+#main{
+    margin:30px auto;
+    padding:15px;
+    border:0px solid;
+    border-radius:5px;
+    background: rgb(190, 190, 190);
+}
+
 .header {
     display: flex;
-    position: fixed;
+    flex-direction: row;
+    width: auto;
+    align-self: center;
+    /*position: fixed;*/
     top: 0;
+    /* background-color: white; */
 }
 
 #logo {
@@ -21,9 +33,9 @@ html,body{
 }
 
 #nav-bar {
-    width: 80%;
+    width: 60%;
     border: solid 1px green;
-    /*display: inline-block;*/
+    display: inline-block;
 }
 
 #header-img {
@@ -84,4 +96,42 @@ html,body{
     margin: 10px;
     border: 1px solid var(--empire-red);
     cursor: pointer;
+}
+
+.productTable td, .productTable th {
+    border: solid 1px var(--empire-red);
+    border-collapse: collapse;
+}
+
+.productTable {
+    border: solid 1px var(--empire-red);
+    text-align: left;
+    margin: 0 auto;
+}
+
+.productTable th {
+    background: rgb(229, 160, 155);
+}
+
+.productTable td {
+    background: rgb(176, 230, 169)
+}
+
+.pricingTable {
+    border: solid 1px var(--empire-red);
+    text-align: left;
+    margin: 0 auto;
+}
+
+.pricingTable th {
+    background: rgb(229, 160, 155);
+}
+
+.pricingTable td {
+    background: rgb(176, 230, 169)
+}
+
+.pricingTable td, .pricingTable th {
+    border: solid 1px var(--empire-red);
+    border-collapse: collapse;
 }
