@@ -5,6 +5,8 @@ html,body{
 
     --empire-red: rgb(139, 32, 25);
     color:var(--empire-red);
+
+    background: rgb(190, 190, 190);
 }
 
 #main{
@@ -18,24 +20,46 @@ html,body{
 .header {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
     align-self: center;
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
-    /* background-color: white; */
+    background-color: rgb(190, 190, 190);
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+    }
 }
 
 #logo {
     width: 10%;
-    border: solid 1px green;
-    min-width: 100px;
+    height: 64px;
+    max-height: 40px;
+    /* border: solid 1px green; */
+    /* min-width: 100px; */
     /*display: inline-block;*/
 }
 
+#logo img {
+    height: 64px;
+    width: 64px;
+}
+
 #nav-bar {
-    width: 60%;
-    border: solid 1px green;
+    width: 80%;
+    height: 64px;
+    /* border: solid 1px green; */
     display: inline-block;
+    margin: 0 auto
+}
+
+#nav-bar ul {
+    list-style: none;
+    padding-top: 10px;
+
+}
+
+#nav-bar li {
+    display: inline;
 }
 
 #header-img {
