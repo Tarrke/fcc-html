@@ -25,7 +25,10 @@ html,body{
     position: fixed;
     top: 0;
     background-color: rgb(190, 190, 190);
-    @media (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+    .header {
         flex-wrap: wrap;
     }
 }
