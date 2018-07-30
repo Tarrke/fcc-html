@@ -1,6 +1,6 @@
 html,body{
     font-family:"Trebuchet MS", Helvetica, sans-serif;
-    text-align:center;
+    text-align: justify;
     min-width:260px;
 
     --empire-red: rgb(139, 32, 25);
@@ -108,12 +108,12 @@ blockquote p {
     padding-right: 2em;
     padding-top: 0px;
     padding-bottom: 0px;
-    text-align: left;
+    text-align: justify;
 }
 
 blockquote div {
     text-align: right;
-    padding-right: 3em;
+    padding-right: 2em;
     padding-left: 5em;
     margin-bottom: 1em;
 }
