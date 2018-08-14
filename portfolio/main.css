@@ -150,6 +150,8 @@ html,body{
 
 .projects .project-tile img {
     width: 100%;
+    min-height: 200px;
+    min-width: 100%;
 }
 
 .projects .project-tile a {
