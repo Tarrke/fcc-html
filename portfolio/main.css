@@ -85,6 +85,10 @@ html,body{
     padding: 5px;
 }
 
+.nav-link a {
+    color: inherit;
+}
+
 .nav-link:visited {
     color: inherit;
 }
