@@ -8,7 +8,12 @@ html,body{
 
     --light-grey: rgb(190, 190, 190);
     /*background: var(--light-grey);*/
-    background: white;
+    background: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -19,7 +24,7 @@ html,body{
     align-self: center;
     top: 0;
     background-color: rgb(190, 190, 190);
-
+    font-size: 1.5em;
     /*height: 100%; *//* Full-height: remove this if you want "auto" height */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -30,10 +35,7 @@ html,body{
 }
 
 #logo {
-    width: 10%;
     height: 64px;
-    /* min-width: 100px; */
-    /*display: inline-block;*/
 }
 
 #logo img {
@@ -42,26 +44,28 @@ html,body{
 }
 
 #navbar {
-    width: 80%;
-    display: inline-block;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    /*height: 100%;*/
-}
-
-#navbar header {
-    padding: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    height: 64px;
+    align-self: center;
+    top: 0;
 }
 
 #navbar ul {
+    height: 64px;
+    width: 100%;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #navbar li {
-    display: inline;
-    /* padding: 20px 0px 20px 0px; */
-    /* border: solid 1px var(--empire-red); */
-    margin: 2px auto;
+    display: inline-block;
+    margin: 0px 1em 0px 1em;
 }
 
 .nav-link {
@@ -82,53 +86,28 @@ html,body{
     }
 }
 
-blockquote{
-    display: block;
-    max-width: 600px;
-    font-style: italic;
-    margin: auto;
-    background-color: var(--light-grey);
-    border: 3px solid rgb(139, 32, 25);
-    margin-top: 3em;
-}
-
-blockquote p {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
-}
-
-blockquote div {
-    text-align: right;
-    padding-right: 2em;
-    padding-left: 5em;
-    margin-bottom: 1em;
-}
-
 #main {
-    margin-top: 64px;
+    /*margin-top: 64px;*/
+}
+
+.headings {
+    margin-bottom: 4em;
+    text-align: center;
 }
 
 .introduction {
     background: green;
-    height: Calc(100vh - 64px);
+    height: 100vh;
     top: 0;
     left: 0;
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.introduction #intro-text {
-    text-align: center;
-}
-
-#projects {
+.work {
     background: red;
-    min-height: Calc(100vh - 64px);
+    min-height: 100vh;
     top: 0;
     left: 0;
     padding: 10vh 5vh 5vh 5vh;
@@ -141,10 +120,6 @@ blockquote div {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
-
-#projects h2 {
-    margin-bottom: 4em;
 }
 
 .projects .project-tile {
@@ -182,16 +157,93 @@ blockquote div {
     margin: 5px;
 }
 
+.show-all {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto 90px;
+    background: #e0ebe8;
+    color: #008080;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid #90C695;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top:10px;
+  }
+
+.show-all:hover {
+    background: #E4F1FE;
+    color: green;
+}
+
 #main-doc {
     margin-left: 220px;
 }
 
-header {
-    font-size: 2em;
+.socials {
+    background: pink;
+    height: Calc(100vh - 64px);
+    top: 0;
+    left: 0;
+    padding: 10vh 5vh 5vh 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#header-img {
-    width: 100%;
+.socials .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
+.social-link {
+    margin: 0px auto;
+}
 
+.fa {
+    padding: 20px;
+    font-size: 75px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-twitter {
+    color:rgb(0,172,237);
+}
+
+.fa-envelope {
+    color: black;
+}
+
+.introduction #intro-text {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background: #22313F;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+  }
